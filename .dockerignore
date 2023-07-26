@@ -1,0 +1,28 @@
+# Exclude node_modules directory
+node_modules
+
+# Exclude development-specific files and directories
+.nuxt
+coverage
+dist
+.vscode
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Exclude build and deployment related files
+.dockerignore
+Dockerfile
+docker-compose.yml
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# Exclude version control directories and files
+.git
+.gitignore
