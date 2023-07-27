@@ -1,8 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 // the base url used for all API requests
-const apiBaseUrl = 'https://hexxonmobile.zendrive.com'
-const enable_dark_theme = true
+const enable_dark_theme = false
 
 export default defineNuxtConfig({
   app: {
@@ -21,10 +20,4 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  runtimeConfig: {
-    // Keys within public are also exposed client-side
-    public: {
-      apiBaseUrl
-    }
-  }
 })

@@ -13,7 +13,7 @@ defineProps<{
     <div class="col">
         <div class="card">
             <div class="px-3 text-center">
-                <img :src=badge.image_url :alt=badge.title class="card-img-top rounded-circle">
+                <img :src=badge.image_url :alt=badge.title class="card-img-top">
             </div>
             <div v-if="!hideTitle" class="card-body text-center">
                 <p class="card-title">{{ badge.title }}</p>

@@ -29,16 +29,17 @@ let recent_badges = user_badges.slice(-3).reverse();
     <hr />
 
     <div class="d-flex justify-content-between text-center mt-5 mb-2">
-        <NuxtLink to="/ledger" class="text-decoration-none text-reset">
-            <div class="border rounded bg-dark-subtle p-3">
+        <NuxtLink to="/ledger" class="text-decoration-none">
+            <div class="border rounded text-bg-primary p-2">
                 <p class="mb-2 h5">{{ user_fuel_points_balance }}</p>
-                <p class="text-muted mb-0">Fuel Points Balance</p>
+                <p class="mb-0">Fuel Points Balance →
+                </p>
             </div>
         </NuxtLink>
-        <NuxtLink to="/badges" class="text-decoration-none text-reset">
-        <div class="border rounded bg-dark-subtle p-3">
+        <NuxtLink to="/badges" class="text-decoration-none">
+        <div class="border rounded text-bg-primary p-2">
             <p class="mb-2 h5">{{ user_badges.length }}</p>
-            <p class="text-muted mb-0">Total Badges Earned</p>
+            <p class="mb-0">Total Badges Earned →</p>
         </div>
         </NuxtLink>
     </div>

@@ -4,7 +4,8 @@ const appConfig = useAppConfig()
 let userId = appConfig.userId
 
 let badges = getSampleUserBadges(userId)
-
+//let badges = await getUserBadges(userId)
+//console.log(badges)
 </script>
 
 

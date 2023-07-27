@@ -3,26 +3,26 @@ import type { User, Badge, LedgerEntry } from '../types'
 export const sampleUserBadges: Badge[] = [
     {
         id: 1,
-        title: 'Example Badge 1',
-        image_url: 'https://placehold.co/300.png',
+        title: 'Fuel Buddy',
+        image_url: '/badges/fuel_buddy.png',
         unlocked_timestamp: '23 Dec',
     },
     {
         id: 2,
-        title: 'Example Badge 2',
-        image_url: 'https://placehold.co/300.png',
+        title: 'Handsfree Champ',
+        image_url: '/badges/handsfree_champ.png',
         unlocked_timestamp: '14 Nov',
     },
     {
         id: 3,
-        title: 'Example Badge 3',
-        image_url: 'https://placehold.co/300.png',
+        title: 'Into Tunes Driver',
+        image_url: '/badges/into_tunes_driver.png',
         unlocked_timestamp: '15 Mar',
     },
     {
         id: 4,
-        title: '100 km covered',
-        image_url: 'https://placehold.co/300.png',
+        title: 'No Need For Speed',
+        image_url: '/badges/no_need_for_speed.png',
         unlocked_timestamp: '23 Dec',
     }
 ]

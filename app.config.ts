@@ -1,3 +1,4 @@
 export default defineAppConfig({
-    userId: 1,
+  apiBaseUrl: 'https://preprod-api.zendrive.com',
+  userId: 1,
   })
