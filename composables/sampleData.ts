@@ -1,29 +1,47 @@
-import type { User, Badge, LedgerEntry } from '../types'
+import type { User, UserLedgerEntry, UserBadge } from '../types'
 
-export const sampleUserBadges: Badge[] = [
+let sampleUserBadges: UserBadge[] = [
     {
         id: 1,
-        title: 'Fuel Buddy',
+        name: 'Fuel Buddy',
         image_url: '/badges/fuel_buddy.png',
-        unlocked_timestamp: '23 Dec',
+        unlock_timestamp: '23 Aug'
     },
     {
         id: 2,
-        title: 'Handsfree Champ',
+        name: 'Handsfree Champ',
         image_url: '/badges/handsfree_champ.png',
-        unlocked_timestamp: '14 Nov',
+        unlock_timestamp: '23 Aug'
     },
     {
         id: 3,
-        title: 'Into Tunes Driver',
+        name: 'Into Tunes Driver',
         image_url: '/badges/into_tunes_driver.png',
-        unlocked_timestamp: '15 Mar',
+        unlock_timestamp: '23 Aug'
     },
     {
         id: 4,
-        title: 'No Need For Speed',
+        name: 'No Need For Speed',
         image_url: '/badges/no_need_for_speed.png',
-        unlocked_timestamp: '23 Dec',
+        unlock_timestamp: '23 Aug'
+    },
+    {
+        id: 5,
+        name: 'Optimum Driver',
+        image_url: '/badges/optimum_driver.png',
+        unlock_timestamp: '23 Aug'
+    },
+    {
+        id: 6,
+        name: 'Road Master',
+        image_url: '/badges/road_master.png',
+        unlock_timestamp: '23 Aug'
+    },
+    {
+        id: 7,
+        name: 'Zen Owl',
+        image_url: '/badges/zen_owl.png',
+        unlock_timestamp: '23 Aug'
     }
 ]
 
@@ -34,46 +52,46 @@ export const sampleUser: User = {
     profile_image_url: 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp',
 }
 
-export const sampleLedger: LedgerEntry[] = [
+export const sampleLedger: UserLedgerEntry[] = [
     {
         id: 1,
-        date: '2021-02-23',
+        transaction_timestamp: '2021-02-23',
         amount: 400,
-        remark: 'Awarded for unlocking "Avid Driver" milestone',
+        remarks: 'Awarded for unlocking "Avid Driver" milestone',
     },
     {
         id: 2,
-        date: '2022-04-27',
+        transaction_timestamp: '2022-04-27',
         amount: 150,
-        remark: 'Awarded for unlocking "Zen of Night" milestone',
+        remarks: 'Awarded for unlocking "Zen of Night" milestone',
     },
     {
         id: 3,
-        date: '2022-06-16',
+        transaction_timestamp: '2022-06-16',
         amount: -23.45,
-        remark: 'Redeemed at "Texas Interstate Fuel Station"',
+        remarks: 'Redeemed at "Texas Interstate Fuel Station"',
     },
     {
         id: 4,
-        date: '2023-02-14',
+        transaction_timestamp: '2023-02-14',
         amount: 200,
-        remark: 'Awarded for unlocking "Avid Driver milestone"',
+        remarks: 'Awarded for unlocking "Zen Owl" milestone',
     },
 ]
 
-export function getSampleUserBadges(user_id: number): Badge[] {
-    return sampleUserBadges
-}
-
 export function getSampleUser(user_id: number): User {
     return sampleUser
+}
+
+export function getSampleUserBadges(user_id: number): UserBadge[] {
+    return sampleUserBadges
 }
 
 export function getSampleUserFuelPointsBalance(user_id: number): Number {
     return 726.55
 }
 
-export function getSampleUserFuelPointLedger(user_id: number): LedgerEntry[] {
+export function getSampleUserFuelPointLedger(user_id: number): UserLedgerEntry[] {
     return sampleLedger
 }
 

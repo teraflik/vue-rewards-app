@@ -3,19 +3,18 @@
 const appConfig = useAppConfig()
 let userId = appConfig.userId
 
-let badges = getSampleUserBadges(userId)
-//let badges = await getUserBadges(userId)
-//console.log(badges)
+let user_badges = await getUserBadges(userId)
+
 </script>
 
 
 <template>
-    <div class="mt-5 mb-3">
+    <div class="my-3">
         <h4>Your unlocked badges</h4>
     </div>
 
     <div class="row row-cols-2">
-        <Badge v-for="badge in badges" :key=badge.id :badge=badge :hideTitle="false" />
+        <Badge v-for="badge in user_badges" :key=badge.id :badge=badge :hideTitle="false" />
     </div>
 </template>
 

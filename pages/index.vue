@@ -5,9 +5,14 @@
       <h3 class="fw-normal text-muted">Your trusted refuelling partner</h3>
     </div>
   </div>
-  <div class="d-flex justify-content-center lead fw-normal my-5">
-    <a class="icon-link" href="#">
-      Explore nearest stations
-    </a>
+  <div class="text-center lead fw-normal my-5">
+    <div class="text-center text-primary">
+      <i class="bi bi-fuel-pump fs-1"></i>
+    </div>
+    <div>
+      <a class="icon-link" href="#">
+        Explore nearest stations <i class="bi bi-chevron-right"></i>
+      </a>
+    </div>
   </div>
 </template>

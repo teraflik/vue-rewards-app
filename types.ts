@@ -6,16 +6,21 @@ export interface User {
     profile_image_url: string
 }
 
-export interface Badge {
+export interface UserLedgerEntry {
     id: number
-    title: string
-    image_url: string
-    unlocked_timestamp: string
+    transaction_timestamp: string
+    amount: number
+    remarks: string
 }
 
-export interface LedgerEntry {
+export interface UserFuelPointsBalance {
+    fuel_points_balance: number
+}
+
+export interface UserBadge {
     id: number
-    date: string
-    amount: number
-    remark: string
+    name: string
+    image_url: string
+    fuel_points?: number
+    unlock_timestamp: string
 }

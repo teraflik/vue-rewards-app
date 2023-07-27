@@ -1,9 +1,9 @@
 <script setup lang="ts">
 
-import type { Badge } from '~/types'
+import type { UserBadge } from '~/types'
 
 defineProps<{
-    badge: Badge,
+    badge: UserBadge,
     hideTitle: Boolean
 }>()
 
@@ -13,11 +13,11 @@ defineProps<{
     <div class="col">
         <div class="card">
             <div class="px-3 text-center">
-                <img :src=badge.image_url :alt=badge.title class="card-img-top">
+                <img :src=badge.image_url :alt=badge.name class="card-img-top">
             </div>
             <div v-if="!hideTitle" class="card-body text-center">
-                <p class="card-title">{{ badge.title }}</p>
-                <p class="fw-lighter fs-7">Unlocked: {{ badge.unlocked_timestamp }}</p>
+                <p class="card-title">{{ badge.name }}</p>
+                <p class="fw-lighter fs-7">Unlocked: 23 Dec </p>
             </div>
         </div>
     </div>
