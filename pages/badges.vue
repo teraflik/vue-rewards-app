@@ -1,10 +1,9 @@
 <script setup lang="ts">
-
 const appConfig = useAppConfig()
 let userId = appConfig.userId
 
-let user_badges = await getUserBadges(userId)
-
+let user_badges = getSampleUserBadges(userId)
+//let user_badges = await getUserBadges(userId)
 </script>
 
 

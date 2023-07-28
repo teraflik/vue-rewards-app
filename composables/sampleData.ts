@@ -1,4 +1,4 @@
-import type { User, UserLedgerEntry, UserBadge } from '../types'
+import type { User, UserLedgerEntry, UserBadge, UserFuelPointsBalance } from '../types'
 
 let sampleUserBadges: UserBadge[] = [
     {
@@ -87,8 +87,8 @@ export function getSampleUserBadges(user_id: number): UserBadge[] {
     return sampleUserBadges
 }
 
-export function getSampleUserFuelPointsBalance(user_id: number): Number {
-    return 726.55
+export function getSampleUserFuelPointsBalance(user_id: number): UserFuelPointsBalance {
+    return { fuel_points_balance: 313.20 }
 }
 
 export function getSampleUserFuelPointLedger(user_id: number): UserLedgerEntry[] {

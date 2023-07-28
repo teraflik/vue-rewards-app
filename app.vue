@@ -4,7 +4,7 @@
   </header>
 
   <main class="container">
-      <NuxtPage />
+    <NuxtPage page-key="index"/>
   </main>
 
   <nav class="fixed-bottom">

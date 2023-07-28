@@ -1,15 +1,12 @@
 <script setup lang="ts">
-
 const appConfig = useAppConfig()
 let userId = appConfig.userId
 
 let user = getSampleUser(userId)
-// let user_fuel_points_balance = getSampleUserFuelPointsBalance(userId)
-// let user_badges = getSampleUserBadges(userId)
-
-let user_fuel_points_balance = await getUserFuelPointsBalance(userId)
-let user_badges = await getUserBadges(userId)
-
+let user_fuel_points_balance = getSampleUserFuelPointsBalance(userId)
+// let user_fuel_points_balance = await getUserFuelPointsBalance(userId)
+let user_badges = getSampleUserBadges(userId)
+// let user_badges = await getUserBadges(userId)
 </script>
 
 

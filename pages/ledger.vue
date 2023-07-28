@@ -1,14 +1,11 @@
 <script setup lang="ts">
-
 const appConfig = useAppConfig()
 let userId = appConfig.userId
 
-// let ledger = getSampleUserFuelPointLedger(userId).reverse()
-// let user_fuel_points_balance = getSampleUserFuelPointsBalance(userId)
-
-let user_fuel_points_balance = await getUserFuelPointsBalance(userId)
-let user_ledger = await getUserFuelPointLedger(userId)
-let desc_ledger = user_ledger
+let user_fuel_points_balance = getSampleUserFuelPointsBalance(userId)
+// let user_fuel_points_balance = await getUserFuelPointsBalance(userId)
+let user_ledger = getSampleUserFuelPointLedger(userId)
+// let user_ledger = await getUserFuelPointLedger(userId)
 </script>
 
 
@@ -31,7 +28,7 @@ let desc_ledger = user_ledger
                 </tr>
             </thead>
             <tbody>
-                <LedgerEntry v-for="ledger_entry in desc_ledger" :key=ledger_entry.id :ledger_entry=ledger_entry />
+                <LedgerEntry v-for="ledger_entry in user_ledger" :key=ledger_entry.id :ledger_entry=ledger_entry />
             </tbody>
         </table>
     </div>
